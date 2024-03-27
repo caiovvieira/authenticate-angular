@@ -8,12 +8,12 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/sign", (req, res) => {
-  const email = "caio@teste.com";
+  const email = "admin@test.com";
   const password = "1234";
 
   if (req.body.email === email && req.body.password === password) {
     const data = {
-      nome: "Caio Vieira",
+      nome: "User",
       email,
       role: ["sysAdmin"],
     };
